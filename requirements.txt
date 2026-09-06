@@ -1,6 +1,4 @@
-```text
 Flask
 gspread
 google-auth
 gunicorn
-```
