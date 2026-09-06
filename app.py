@@ -21,7 +21,7 @@ app = Flask(__name__)
 # Your ID would be:
 # ABC123XYZ
 
-SPREADSHEET_ID = "1ZS-CtvFJj_LAV5hR4q4niZPoDTJXW9FO6fflt5zTpvI"
+SPREADSHEET_ID = os.environ.get("1ZS-CtvFJj_LAV5hR4q4niZPoDTJXW9FO6fflt5zTpvI")
 
 # Name of the tab inside your Google Sheet
 SHEET_NAME = "DataSheet"
