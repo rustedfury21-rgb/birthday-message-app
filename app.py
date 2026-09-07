@@ -46,12 +46,11 @@ def get_sheet():
         raise RuntimeError(
             "You haven't entered your Google Sheet ID yet."
         )
-
     credentials = Credentials.from_service_account_file(
-        "credentials.json",
+        "/etc/secrets/credentials.json",
         scopes=SCOPES
-    )
-
+)
+    
     client = gspread.authorize(credentials)
 
     spreadsheet = client.open_by_key(SPREADSHEET_ID)
